@@ -9,6 +9,8 @@
 import XCTest
 @testable import GameOfLife
 
+let mainVC = MainViewController()
+
 class GameOfLifeTests: XCTestCase {
     
     override func setUp() {
@@ -21,9 +23,14 @@ class GameOfLifeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTickAlive() {
+        let result = mainVC.tick(gameState: GameState.alive)
+        XCTAssert(result == GameState.alive, "Tick Test Alive Failed!")
+    }
+    
+    func testTickDead() {
+        let result = mainVC.tick(gameState: GameState.dead)
+        XCTAssert(result == GameState.dead, "Tick Test Dead Failed")
     }
     
     func testPerformanceExample() {

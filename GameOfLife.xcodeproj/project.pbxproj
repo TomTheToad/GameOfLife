@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C7AA5EB7202A7C1800B04F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5EB6202A7C1800B04F5F /* AppDelegate.swift */; };
-		C7AA5EB9202A7C1800B04F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5EB8202A7C1800B04F5F /* ViewController.swift */; };
+		C7AA5EB9202A7C1800B04F5F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5EB8202A7C1800B04F5F /* MainViewController.swift */; };
 		C7AA5EBC202A7C1800B04F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AA5EBA202A7C1800B04F5F /* Main.storyboard */; };
 		C7AA5EBE202A7C1800B04F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7AA5EBD202A7C1800B04F5F /* Assets.xcassets */; };
 		C7AA5EC1202A7C1800B04F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AA5EBF202A7C1800B04F5F /* LaunchScreen.storyboard */; };
 		C7AA5ECC202A7C1900B04F5F /* GameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5ECB202A7C1900B04F5F /* GameOfLifeTests.swift */; };
+		C7AA5ED7202A7F2500B04F5F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AA5ED6202A7F2500B04F5F /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* Begin PBXFileReference section */
 		C7AA5EB3202A7C1800B04F5F /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AA5EB6202A7C1800B04F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7AA5EB8202A7C1800B04F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7AA5EB8202A7C1800B04F5F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C7AA5EBB202A7C1800B04F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7AA5EBD202A7C1800B04F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7AA5EC0202A7C1800B04F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		C7AA5EC7202A7C1800B04F5F /* GameOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AA5ECB202A7C1900B04F5F /* GameOfLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeTests.swift; sourceTree = "<group>"; };
 		C7AA5ECD202A7C1900B04F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7AA5ED6202A7F2500B04F5F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				C7AA5EB6202A7C1800B04F5F /* AppDelegate.swift */,
-				C7AA5EB8202A7C1800B04F5F /* ViewController.swift */,
+				C7AA5EB8202A7C1800B04F5F /* MainViewController.swift */,
 				C7AA5EBA202A7C1800B04F5F /* Main.storyboard */,
 				C7AA5EBD202A7C1800B04F5F /* Assets.xcassets */,
 				C7AA5EBF202A7C1800B04F5F /* LaunchScreen.storyboard */,
 				C7AA5EC2202A7C1800B04F5F /* Info.plist */,
+				C7AA5ED6202A7F2500B04F5F /* GameState.swift */,
 			);
 			path = GameOfLife;
 			sourceTree = "<group>";
@@ -199,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7AA5EB9202A7C1800B04F5F /* ViewController.swift in Sources */,
+				C7AA5ED7202A7F2500B04F5F /* GameState.swift in Sources */,
+				C7AA5EB9202A7C1800B04F5F /* MainViewController.swift in Sources */,
 				C7AA5EB7202A7C1800B04F5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
